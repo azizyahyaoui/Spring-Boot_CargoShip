@@ -1,0 +1,16 @@
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Phone - OPPO', 'TECHNOLOGY', 1500, 52);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('PC- MSI', 'TECHNOLOGY', 2999, 45);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Mushrooms - Black, Dried', 'FOOD', 5.30, 52);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Muffin - Mix - Mango Sour Cherry', 'FOOD', 0.93, 45);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Socks - Whole White socks', 'CLOTHING', 8.10, 52);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Socks - Whole Blue socks', 'CLOTHING', 8.10, 52);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('RedDead redemption 2', 'GAMES', 59.29, 37);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Metal Gear Solid V - The Phantom Pain', 'GAMES', 18.51, 29);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Coffee Maker - Keurig', 'HOME', 89.99, 20);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Yoga Mat - Non-Slip', 'SPORTS', 24.95, 50);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('The Hitchhiker''s Guide to the Galaxy', 'BOOKS', 12.99, 60);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Bluetooth Earbuds - Sony', 'TECHNOLOGY', 79.99, 30);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Smart Home Thermostat', 'HOME', 129.99, 15);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Running Shoes - Nike', 'SPORTS', 109.95, 25);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Wireless Charging Pad', 'TECHNOLOGY', 29.99, 40);
+-- insert into tbl_products (product_name, category, price, stock_quantity) values ('Portable Bluetooth Speaker', 'MUSIC', 49.95, 22);
