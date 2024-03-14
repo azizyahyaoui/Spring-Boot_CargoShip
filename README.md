@@ -57,6 +57,4 @@ The Spring Boot application will be accessible at `http://localhost:8080/swagger
 Feel free to modify the Spring Boot application code and the database configuration to suit your needs.
 
 ## License
-
 This project is licensed under the [MIT License](LICENSE).
-```
