@@ -20,9 +20,14 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Set up version
+        id: version
+        run: echo "::set-output name=version::v$(date +'%Y%m%d%H%M%S')"
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/springboot_api:$(date +%s)
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/springboot_api:${{ steps.version.outputs.version }}
