@@ -37,7 +37,6 @@ RUN adduser \
     --uid "${UID}" \
     springuser
 
-
 USER springuser
 
 COPY --from=extract build/target/extracted/dependencies/ ./
