@@ -27,4 +27,3 @@ jobs:
           file: Dockerfile
           push: true
           tags: medazizyahayoui/springboot_api:$(date +%s)
-
