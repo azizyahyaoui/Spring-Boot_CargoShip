@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
     @GetMapping("/home")
     public String fetchAllProducts(){
-        return "this is Home page";
+        return "this is Home page form docker ";
     }
 
     @GetMapping("/login")

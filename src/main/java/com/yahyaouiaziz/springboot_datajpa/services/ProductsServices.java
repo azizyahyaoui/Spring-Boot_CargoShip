@@ -13,8 +13,18 @@ public class ProductsServices {
 
     private final ProductsRepository productsRepository;
 
- public List<Products> getAllProducts(){
-     return productsRepository.findAll();
- }
+     public List<Products> getAllProducts(){
+         return productsRepository.findAll();
+     }
+
+    public String updateProducts(long id, Products products) {
+
+        return "update 3...";
+    }
+    public void deleteProducts(long id) {
+        productsRepository.deleteById(id);
+    }
+
+
 
 }

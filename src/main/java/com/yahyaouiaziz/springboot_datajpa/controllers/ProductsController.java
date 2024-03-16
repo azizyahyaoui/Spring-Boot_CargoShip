@@ -2,11 +2,9 @@ package com.yahyaouiaziz.springboot_datajpa.controllers;
 
 import com.yahyaouiaziz.springboot_datajpa.model.entities.products.Products;
 import com.yahyaouiaziz.springboot_datajpa.services.ProductsServices;
+import jakarta.persistence.PostUpdate;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,9 +20,19 @@ public class ProductsController {
         return productsServices.getAllProducts();
     }
 
-    @GetMapping("/products-{id}")
-    public String fetchProductsById(@PathVariable int id){
+    @GetMapping("/products-by-id-{id}")
+    public String fetchProductsById(@PathVariable long id){
         return "this all your products " + id + " is : a soap";
+    }
+
+    @PutMapping("/update_products-by-id-{id}")
+    public String UpdateProductsById(@PathVariable long id,Products products) {
+        return "update ..";
+    }
+
+    @DeleteMapping("/delete_products-by-id-{id}")
+    public void deleteProductsById(@PathVariable long id){
+        productsServices.deleteProducts(id);
     }
 
 }
