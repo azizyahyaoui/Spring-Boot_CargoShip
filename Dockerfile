@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-jammy as deps
+FROM eclipse-temurin:21-jdk-alpine as deps
 LABEL authors="Yahyaoui_Med_Aziz"
 WORKDIR /build
 
@@ -25,7 +25,7 @@ WORKDIR /build
 
 RUN java -Djarmode=layertools -jar target/app.jar extract --destination target/extracted
 
-FROM eclipse-temurin:17-jre-jammy AS final
+FROM eclipse-temurin:21-jdk-alpine AS final
 WORKDIR /app
 ARG UID=10001
 RUN adduser \
