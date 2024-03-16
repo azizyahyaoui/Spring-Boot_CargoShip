@@ -1,5 +1,9 @@
 # Spring Boot Project with PostgreSQL and Docker Compose
+---
 
+> **_NOTE:_**  "This project is still in progress!"
+
+---
 This project demonstrates how to set up a Spring Boot application with a PostgreSQL database using Docker Compose. The application and the database will run in separate containers.
 
 ## Prerequisites
