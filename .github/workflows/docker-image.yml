@@ -23,7 +23,7 @@ jobs:
 
       - name: Set up version
         id: version
-        run: echo "::set-output name=version::v$(date +'%Y%m%d%H%M%S')"
+        run: echo "::set-output name=version::${{ github.run_number }}-alpine"
 
       - name: Build and push
         uses: docker/build-push-action@v5

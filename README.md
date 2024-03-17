@@ -31,17 +31,21 @@ DB_PASSWORD=mypassword
 
 ## Building and Running the Application with Docker
 
-To build and run the Spring Boot application using Docker, a Dockerfile is provided with the necessary instructions. The application uses the Eclipse Temurin JDK 17 image for execution.
+To build and run the Spring Boot application using Docker, a Dockerfile is provided with the necessary instructions.
 
 ### Dockerfile
 
-The Dockerfile is configured to build the Spring Boot application and package it into a Docker image. It uses the `eclipse-temurin:17-jdk-jammy` image as the base image.
+The Dockerfile is configured to build the Spring Boot application and package it into a Docker image. It uses the `eclipse-temurin:21-jdk-alpin` image as the base image.
 
 
 To build the Docker image, navigate to the project directory and run:
 
 ```bash
 docker build -t springapi/springboot_CargoShip .
+```
+Also, you can pull it from docker hub
+```bash
+docker pull medazizyahayoui/springboot_api
 ```
 
 ### Running the Application with Docker Compose
