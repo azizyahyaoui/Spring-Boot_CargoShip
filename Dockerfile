@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jdk-alpine as deps
+FROM eclipse-temurin:22_36-jdk-alpine as deps
 LABEL authors="Yahyaoui_Med_Aziz"
 WORKDIR /build
 
@@ -20,7 +20,7 @@ RUN --mount=type=bind,source=pom.xml,target=pom.xml \
     mv target/$(./mvnw help:evaluate -Dexpression=project.artifactId -q -DforceStdout)-$(./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout).jar target/app.jar
 
 
-FROM eclipse-temurin:21-jdk-alpine AS final
+FROM eclipse-temurin:22_36-jdk-alpine  AS final
 WORKDIR /app
 ARG UID=10001
 RUN adduser \
